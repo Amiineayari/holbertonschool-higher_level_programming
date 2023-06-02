@@ -1,13 +1,8 @@
 #!/usr/bin/python3
+# 9-print_last_digit.py
+
+
 def print_last_digit(number):
-        if number < 0:
-                    n = -number
-        else:
-                    n = number
-                        ns = str(n)
-                            if ns.isnumeric():
-                                        r = ns[len(ns) - 1]
-                                                print("{}".format(r), end = "")
-                                                        return(r)
-                            else:
-                                        return
+            """Print the last digit of a number and return it."""
+                print(abs(number) % 10, end="")
+                    return (abs(number) % 10)
