@@ -1,0 +1,9 @@
+What is a Python if else statement?
+An if and else is a conditional statement that executes a block of code when certain conditions have been met.
+Creating a Python if else statement
+To create a Python if else statement we begin by writing the word if and then we give it a condition and if that condition is true it moves on to the next line and runs that piece of code.
+So a basic if statement will have the word if followed by a condition and then a colon after which when we hit enter there will be an indentation. In this example, we will say that x = 20 and y =15 and then we will state the condition that says if x is greater than y, print x.
+
+So what we’re saying here is that if the value for x is greater than the value for y, and these are both integers, it’s going to run the piece of code that prints out the number 20 Suppose we change the value of y to 25 the code above will no longer run.  This is because the condition above will no longer be met. However, if we change the condition to read if x was less than y we would then print x out again. Using the else condition in Python if else statement
+What if we want to do something else when the condition is not met. This is where the “else” comes in. If x is less than y, we are going to run a different piece of code. But if it is not met then we place another condition outside the indentation statement As you can see in the code above the condition x>y is not met therefore the program opts to run the piece of code after the else statement which then prints out the string “this is our else”. It is important to note that it is all about true and false in if statements. Using Python if else statements with lists
+Another useful thing that we can do is we can use an if statement to check if something is present in a list. This is quite a common concept and quite handy to know.x
