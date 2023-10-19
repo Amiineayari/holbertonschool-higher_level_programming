@@ -1,20 +1,18 @@
 #!/usr/bin/python3
-class MyList(list):
-    def print_sorted(self):
-        # Print the list sorted in ascending order
-        print(sorted(self))
+"""Defines a class MyList that inherits from list"""
 
-# Test the MyList class
-if __name__ == "__main__":
-    my_list = MyList()
-    my_list.append(1)
-    my_list.append(4)
-    my_list.append(2)
-    my_list.append(3)
-    my_list.append(5)
-    print(my_list)
-    
-    # Call the print_sorted method to print the sorted list
-    my_list.print_sorted()
-    
-    print(my_list)
+
+class MyList(list):
+    """
+    Class that inherits from list.
+
+    Args:
+        list (list): list to sort in ascending order.
+    """
+    def print_sorted(self):
+        """
+        Prints a list in ascending order.
+        """
+        list_ = self[:]
+        list_.sort()
+        print(list_)
