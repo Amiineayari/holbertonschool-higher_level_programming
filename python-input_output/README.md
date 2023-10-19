@@ -62,5 +62,3 @@ This README provides a basic introduction to Python's input and output capabilit
 For more detailed information and examples, you can refer to Python's official documentation and various online tutorials.
 
 Happy coding!
-
-css
