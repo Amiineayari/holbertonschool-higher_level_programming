@@ -1,24 +1,19 @@
 #!/usr/bin/python3
+from sys import argv
 
-if __name__ == "__main__":
-    import sys
+if __name__ == "__main":
+    # Get the number of arguments
+    num_args = len(argv) - 1
 
-    # Get the number of command-line arguments
-    i = len(sys.argv) - 1
-
-    if i == 0:
-        print("{} arguments.".format(i))
-    elif i == 1:
-        print("{} argument:".format(i))
+    # Print the number of arguments and whether they are singular or plural
+    if num_args == 0:
+        print("0 arguments.")
+    elif num_args == 1:
+        print("1 argument:")
     else:
-        print("{} arguments:".format(i))
+        print(f"{num_args} arguments:")
 
-    # If there is at least one argument, iterate through the arguments
-    if i >= 1:
-        i = 0
-        for arg in sys.argv:
-            if i != 0:
-                # Print the index and value of each argument
-                print("{}: {}".format(i, arg))
-            i += 1
-            
+    # Print the arguments with their positions
+    for i in range(1, num_args + 1):
+        print(f"{i}: {argv[i]}")
+        
