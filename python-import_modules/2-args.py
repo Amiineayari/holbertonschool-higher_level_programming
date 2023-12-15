@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-from sys import argv
+# 2-args.py
+# Brennan D Baraban <375@holbertonschool.com>
 
-if __name__ == "__main":
-    # Get the number of arguments
-    num_args = len(argv) - 1
+if __name__ == "__main__":
+    """Print the number of and list of arguments."""
+    import sys
 
-    # Print the number of arguments and whether they are singular or plural
-    if num_args == 0:
+    count = len(sys.argv) - 1
+    if count == 0:
         print("0 arguments.")
-    elif num_args == 1:
+    elif count == 1:
         print("1 argument:")
     else:
-        print(f"{num_args} arguments:")
-
-    # Print the arguments with their positions
-    for i in range(1, num_args + 1):
-        print(f"{i}: {argv[i]}")
-        
+        print("{} arguments:".format(count))
+    for i in range(count):
+        print("{}: {}".format(i + 1, sys.argv[i + 1]))
